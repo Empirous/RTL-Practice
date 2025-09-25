@@ -1,4 +1,4 @@
-/*
+/* https://chipdev.io/question/3
 Prompt
 
 Divide an input number by a power of two and round the result to the nearest integer. 
