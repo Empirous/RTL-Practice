@@ -29,3 +29,19 @@ module model #(parameter
   end
 
 endmodule
+
+/* ALTERNATIVE SOLUTION
+  always_comb begin
+    logic [$clog2(DATA_WIDTH):0] num_zeros = 0;
+      dout = DATA_WIDTH;
+      for(int i = 0; i < DATA_WIDTH; i++)
+        if(~din[i])
+          num_zeros += 1;
+        else begin
+          dout = num_zeros;
+          break;
+        end
+  end
+
+endmodule
+*/
