@@ -35,20 +35,14 @@ module model #(parameter
 
   always @(posedge clk) begin
     if(reset) begin
-      counting = 0;
-      counter = 0;
+      counting <= 0;
+      counter <= 0;
     end else if (stop) begin
-      counting = 0;
-    end else if (start && ~counting) begin
-      counting = 1;
+      counting <= 0;
+    end else if (start | counting) begin
+      counting <= 1;
+      counter <= (counter == MAX) ? 0 : counter + 1;
     end 
-    
-    if (counting) begin
-      if(counter == MAX)
-        counter = 0;
-      else
-        counter += 1;
-    end
 
   end
 
