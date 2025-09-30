@@ -1,7 +1,8 @@
 /* https://chipdev.io/question/1
 Prompt
 
-Build a router circuit which forwards data from the input (din) to one of four outputs (dout0, dout1, dout2, or dout3), specified by the address input (addr).
+Build a router circuit which forwards data from the input (din) to one of 
+four outputs (dout0, dout1, dout2, or dout3), specified by the address input (addr).
 
 The address is a two bit value whose decimal representation determines which output value to use. 
 Append to dout the decimal representation of addr to get the output signal name dout{address decimal value}. 
