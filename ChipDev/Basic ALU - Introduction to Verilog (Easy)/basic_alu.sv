@@ -1,9 +1,13 @@
 /* https://chipdev.io/question/23
 Prompt
 
-Design a simple Arithmetic Logic Unit (ALU) which performs a set of operations on two input operands a and b. The outputs of each operation are sent to the corresponding output signal - a_plus_b, a_minus_b, not_a, a_and_b, a_or_b, and a_xor_b.
+Design a simple Arithmetic Logic Unit (ALU) which performs a set of operations on two input operands a and b. 
+The outputs of each operation are sent to the corresponding output signal - a_plus_b, a_minus_b, not_a, a_and_b, a_or_b, and a_xor_b.
 
-The ALU is an important part of many modern computing systems. Conventional ALUs receive two operands from an external control unit, as well as an opcode which determines the type of calculation to perform. For this question, we've simplified the behavior such that the ALU produces all outputs at once.
+The ALU is an important part of many modern computing systems. Conventional ALUs receive two operands from an external control unit, 
+as well as an opcode which determines the type of calculation to perform. For this question, we've simplified the behavior such 
+that the ALU produces all outputs at once.
+
 Input and Output Signals
 
     a - First operand input
