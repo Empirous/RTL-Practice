@@ -1,7 +1,9 @@
 /* https://chipdev.io/question/12
 Prompt
 
-Find the number of trailing 0s in the binary representation of the input (din). If the input value is all 0s, the number of trailing 0s is the data width (DATA_WIDTH)
+Find the number of trailing 0s in the binary representation of the input (din). 
+If the input value is all 0s, the number of trailing 0s is the data width (DATA_WIDTH)
+
 Input and Output Signals
 
     din - Input value
