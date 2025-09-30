@@ -3,7 +3,11 @@ Prompt
 
 Given an input clock signal, generate three output clock signals with 2x, 4x, and 6x the period of the input clock.
 
-When resetn is active, then all clocks are reset to 0. When resetn becomes inactive again, all clocks should undergo their posedge transition and start an entirely new clock period. Specifically this means that if resetn became active in the middle of an output clock's period, when resetn becomes inactive the output clock should start an entirely new period instead of continuing from where the interrupted period left off.
+When resetn is active, then all clocks are reset to 0. When resetn becomes inactive again, all clocks should undergo 
+their posedge transition and start an entirely new clock period. Specifically this means that if resetn became active 
+in the middle of an output clock's period, when resetn becomes inactive the output clock should start an entirely new 
+period instead of continuing from where the interrupted period left off.
+
 Input and Output Signals
 
     clk - Clock signal
