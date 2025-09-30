@@ -1,9 +1,13 @@
 /* https://chipdev.io/question/6
 Prompt
 
-Build a circuit that pulses dout one cycle after the rising edge of din. A pulse is defined as writing a single-cycle 1 as shown in the examples below. When resetn is asserted, the value of din should be treated as 0.
+Build a circuit that pulses dout one cycle after the rising edge of din. 
+A pulse is defined as writing a single-cycle 1 as shown in the examples below. 
+When resetn is asserted, the value of din should be treated as 0.
 
-Bonus - can you enhance your design to pulse dout on the same cycle as the rising edge? Note that this enhancement will not pass our test suite, but is still a useful exercise.
+Bonus - can you enhance your design to pulse dout on the same cycle as the rising edge? 
+Note that this enhancement will not pass our test suite, but is still a useful exercise.
+
 Input and Output Signals
 
     clk - Clock signal
