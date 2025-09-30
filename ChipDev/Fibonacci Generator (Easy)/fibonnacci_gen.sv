@@ -3,7 +3,8 @@ Prompt
 
 Design a circuit which generates the Fibonacci sequence starting with 1 and 1 as the first two numbers.
 
-The Fibonacci sequence is a sequence of numbers where each number is the sum of the two previous numbers. More formally this can be expressed as:
+The Fibonacci sequence is a sequence of numbers where each number is the sum of the two previous numbers. 
+More formally this can be expressed as:
 
 F0 = 1
 F1 = 1
@@ -11,7 +12,8 @@ Fn = Fn-1 + Fn-2 for n > 1.
 
 Following the definition of the Fibonacci sequence above we can see that the sequence is 1, 1, 2, 3, 5, 8, 13, etc.
 
-The sequence should be produced when the active low signal (resetn) becomes active. In other words, the sequence should restart from 1 followed by another 1 (the Fibonacci sequence's initial condition) as soon as resetn becomes active.
+The sequence should be produced when the active low signal (resetn) becomes active. In other words, the sequence 
+should restart from 1 followed by another 1 (the Fibonacci sequence's initial condition) as soon as resetn becomes active.
 Input and Output Signals
 
     clk - Clock signal
