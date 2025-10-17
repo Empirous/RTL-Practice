@@ -36,7 +36,6 @@ module model (
   always @(posedge clk) begin
 
     if(~resetn) begin
-      period_2 <= 0;
       counter <= 0;
       {period_2, period_4, period_6} <= '0;
     end else begin
