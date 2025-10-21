@@ -35,6 +35,6 @@ endmodule
  
 // BIT TRICK: x & x+1 turns off trailing 1's 
 // This can be used as long as x is not '0 or '1.
-// If of the form of something like 0011, it will result in 0000
+// If x is of the form of something like 0011, bit trick will result in 0000
 // and can be checked by comparing to '0 
 
