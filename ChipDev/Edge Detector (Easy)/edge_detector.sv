@@ -35,7 +35,7 @@ module model (
       current <= 0;
       last    <= 0;
     end else begin
-      current <=  din;
+      current <= din;
       last    <= current;
     end
 
