@@ -38,7 +38,6 @@ module model (
   } state_e;
 
   state_e state, next;
-  logic n_dout;
 
   always_ff @ (posedge clk)
     if (~resetn) state <= START;
