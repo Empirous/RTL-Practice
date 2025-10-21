@@ -17,6 +17,7 @@ module model #(parameter
   output logic onehot
 );
     
-  assign onehot = (din == 0) ? 0 : (din & din-1) == 0; //bit trick, property of one-hot values
+  assign onehot = (din == 0) ? 0 : 
+                  (din & din-1) == 0; //bit trick, property of one-hot values
   
 endmodule
