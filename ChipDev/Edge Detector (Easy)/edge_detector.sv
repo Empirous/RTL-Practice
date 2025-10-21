@@ -33,10 +33,10 @@ module model (
   
     if(~resetn) begin
       current <= 0;
-      last <= 0;
+      last    <= 0;
     end else begin
       current <=  din;
-      last <= current;
+      last    <= current;
     end
 
   end
