@@ -63,6 +63,6 @@ endmodule
 // As you track the input bits, you can also follow the resulting remainder.
 // You can consider that as each bit enters, you are logical shifting left by one, 
 // then adding the next input bit. Logical shifting left by one is multiplying by 2.
-// So for example if you currently had a remainder of 2 and you next input was 1, 
+// So for example if you currently had a remainder of 2 and your next input was 1, 
 // then multiplying the remainder by 2 and adding the input 1 bit gives you (2*2) + 1 = 5
-// In modulus 3, 5%3 would result in a remainder of 2 again, so we remain in the REM2 state.
+// In modulus 3, 5%3 would result in a remainder of 2 again, so we stay in the REM2 state.
