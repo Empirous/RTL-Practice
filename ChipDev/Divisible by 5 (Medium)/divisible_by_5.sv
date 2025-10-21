@@ -64,6 +64,6 @@ module model (
 endmodule
 
 // Refer to Divisible by 3 (Medium) for solution explanation. 
-// The solution to divisible by 5 is just an expansion of the divisible by 3 solution.
+// The solution to divisible by 5 is just an extension of the divisible by 3 solution.
 
 
