@@ -15,7 +15,7 @@ module model #(parameter
   output logic [DATA_WIDTH-1:0] dout
 );
 
-  always @(*) begin
+  always_comb begin
     for(int i = 0; i < DATA_WIDTH; i++) 
       assign dout[i] = din[DATA_WIDTH-1-i];
   end
