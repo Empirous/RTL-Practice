@@ -39,8 +39,9 @@ module model #(parameter
     output logic buzz,
     output logic fizzbuzz
 );
+    
     integer counter = 0;
-    always @(posedge clk) begin
+    always_ff @(posedge clk) begin
         if(~resetn | counter == MAX_CYCLES-1)
             counter <= 0;
         else
@@ -52,4 +53,5 @@ module model #(parameter
         buzz = (counter % BUZZ) == 0;
         fizzbuzz = fizz && buzz;
     end
+    
 endmodule
