@@ -33,7 +33,6 @@ module model (
 
     logic [7:0] reg_file [7:0]; 
     logic invalid_op;
-    integer RF_idx = addr;
     
     assign invalid_op = wr && rd;
 
@@ -44,10 +43,10 @@ module model (
 
         end else begin
             if(wr && ~invalid_op) 
-                reg_file[RF_idx] <= din;
+                reg_file[addr] <= din;
 
             dout <= (rd && ~invalid_op) ? 
-                reg_file[RF_idx] : '0;
+                reg_file[addr] : '0;
 
             error <= invalid_op;
         end 
