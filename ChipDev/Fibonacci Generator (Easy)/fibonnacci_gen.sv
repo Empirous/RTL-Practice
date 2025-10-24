@@ -35,7 +35,7 @@ module model #(parameter
   
   logic [DATA_WIDTH-1:0] fib_out, last_out;
 
-  always @(posedge clk) begin
+  always_ff @(posedge clk) begin
     if(~resetn) begin
       fib_out <= 1;
       last_out <= 0;
