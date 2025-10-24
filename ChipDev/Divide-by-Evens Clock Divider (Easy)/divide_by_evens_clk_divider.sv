@@ -33,7 +33,7 @@ module model (
 
   logic period_2, period_4, period_6;
   integer counter;
-  always @(posedge clk) begin
+  always_ff @(posedge clk) begin
 
     if(~resetn) begin
       counter <= 0;
