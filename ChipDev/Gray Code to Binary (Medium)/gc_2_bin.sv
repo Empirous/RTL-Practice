@@ -26,16 +26,14 @@ module model #(parameter
 
 
   if(DATA_WIDTH == 1) assign bin = gray;
-
   else begin
     always_comb begin
       bin[DATA_WIDTH-1] = gray[DATA_WIDTH-1];
 
-      for(int i=DATA_WIDTH-2; i >= 0; i--) begin
+      for(int i=DATA_WIDTH-2; i >= 0; i--) 
         bin[i] = bin[i+1] ^ gray[i];
-      end
-    end
 
+    end
   end
 
 endmodule
