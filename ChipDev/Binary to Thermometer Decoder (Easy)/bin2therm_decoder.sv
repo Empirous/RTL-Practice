@@ -19,14 +19,11 @@ module model (
     input [7:0] din,
     output reg [255:0] dout
 );
-
-    integer din_int; 
-    assign din_int = din; 
-
+    
     always_comb begin
         for(int i = 0; i < 256; i++) begin
-            dout[i] = (i <= din_int) ? 1'b1 : 1'b0;
+            dout[i] = (i < din+1) ? 1'b1 : 1'b0;
         end
     end
-
+    
 endmodule
