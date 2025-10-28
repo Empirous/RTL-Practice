@@ -34,9 +34,9 @@ module model #(parameter
   output logic [DATA_WIDTH-1:0] dout3
 );
 
-    assign dout0 = (din_en & (addr == 2'd0)) ? din : {$bits(din){1'b0}};
-    assign dout1 = (din_en & (addr == 2'd1)) ? din : {$bits(din){1'b0}};
-    assign dout2 = (din_en & (addr == 2'd2)) ? din : {$bits(din){1'b0}};
-    assign dout3 = (din_en & (addr == 2'd3)) ? din : {$bits(din){1'b0}};
+  assign dout0 = (din_en & (addr == 2'd0)) ? din : '0;
+  assign dout1 = (din_en & (addr == 2'd1)) ? din : '0;
+  assign dout2 = (din_en & (addr == 2'd2)) ? din : '0;
+  assign dout3 = (din_en & (addr == 2'd3)) ? din : '0;
     
 endmodule
